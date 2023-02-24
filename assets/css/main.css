@@ -1,0 +1,171 @@
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  z-index: 1;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  letter-spacing: 4px;
+}
+.header-img {
+  width: 100%;
+  height: auto;
+}
+.navbar-brand,
+.nav-link {
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  background-color: #ccc;
+}
+.navbar-brand span {
+  font-weight: 800;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* header */
+.header-container {
+  position: relative;
+  aspect-ratio: 15 / 8;
+}
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header strong {
+  background-color: #000;
+  padding: 8px 16px;
+  opacity: 0.75;
+  font-size: 36px;
+}
+header span {
+  font-size: 36px;
+}
+/* projects */
+
+/* .projects {
+  margin-bottom: ;
+} */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.project-item {
+  position: relative;
+}
+
+.project-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: #fff;
+  background-color: #000;
+  padding: 8px 16px;
+  transition: all 0.3s;
+}
+
+.project-item:hover .project-title {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* about */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.about-img-box {
+  overflow: hidden;
+}
+.about-img {
+  transition: all 0.3;
+}
+
+.about-item:hover {
+  scale: 1.2;
+}
+
+.about-name {
+  font-size: 24px;
+  margin: 10px 0 15px;
+}
+
+.about-job {
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+.about-description {
+  margin: 15px 0;
+}
+
+.about-button {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+}
+
+.about-button:hover {
+  background-color: #ccc;
+}
+
+/* contact */
+
+.contact-input {
+  width: 100%;
+  border: 1px solid#ccc;
+  padding: 8px;
+  margin: 16px 0;
+}
+
+.contact-button {
+  color: #fff;
+  background-color: #000;
+  padding: 8px 16px;
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+
+.contact-button:hover {
+  background-color: #000;
+  color: #ccc;
+}
+
+/* footer */
+.footer {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.copyright {
+  text-decoration: underline;
+}
